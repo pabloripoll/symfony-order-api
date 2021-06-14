@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Feature\\LoginTest::testDeprecatedCode":3,"Tests\\Feature\\LoginTest::login_admin_user":5},"times":{"Tests\\Feature\\LoginTest::testDeprecatedCode":0.002,"Tests\\Feature\\LoginTest::login_admin_user":0.002}}

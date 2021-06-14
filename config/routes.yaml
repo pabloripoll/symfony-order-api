@@ -1,0 +1,37 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+## ADMIN USERS ##
+admin_login:
+    path: /login
+    controller: App\Controller\AdminUserController::login
+    methods: POST
+
+## PRODUCTS ##
+read_product:
+    path: /product/{id}
+    controller: App\Controller\ProductController::readProduct
+    methods: GET|HEAD
+create_product:
+    path: /product
+    controller: App\Controller\ProductController::createProduct
+    methods: POST
+delete_product:    
+    path: /product/{id}
+    controller: App\Controller\ProductController::deleteProduct
+    methods: DELETE
+
+## ORDERS ##
+read_order:
+    path: /order/{id}
+    controller: App\Controller\OrderController::readOrder
+    methods: GET|HEAD
+create_order:
+    path: /order
+    controller: App\Controller\OrderController::createOrder
+    methods: POST
+complete_order:
+    path: /order/add
+    controller: App\Controller\OrderController::completeOrder
+    methods: POST
